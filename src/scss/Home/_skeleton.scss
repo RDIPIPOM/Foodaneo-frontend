@@ -1,0 +1,100 @@
+//Home skeleton
+
+.CTA {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+}
+
+.CTA-message{
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.btnCTAOrder{
+    width: 120px;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-categories{
+    padding: 0 17px 0 17px;
+}
+
+.dish-category-menu{
+    margin-top: 48px;
+}
+
+.dish-category{
+    margin-bottom: 16px;
+}
+
+.dish-card{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    display: flex;
+}
+
+.dish-card:last-child{
+    border-bottom: #E4E4E4 solid 1px;
+}
+
+.dish-body{
+    padding: 8px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dish-title{
+    margin-bottom: 4px;
+}
+
+.dish-location-price{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+.dish-picture{
+    width: 15vh;
+    height: 15vh;
+    background-image: url('../assets/img/dish-pictures/chilaquiles.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-view-all{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-view-all{
+    margin-right: 4px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-img{
+    margin: 4px 0 0 4px;
+    height: 10px;
+    width: 20px;
+}
+
+.navigation-space{
+    height: 96px;
+}

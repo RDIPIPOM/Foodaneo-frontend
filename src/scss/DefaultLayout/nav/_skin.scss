@@ -1,0 +1,27 @@
+//Nav skin
+
+.nav-container{
+    background-color: #F7F7F7;
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #727272;
+}
+
+.nav-option{
+    background-color: transparent;
+    color: #363636;
+    text-decoration: none;
+}
+
+.nav-option-picture{
+    background-color: transparent;
+    filter: invert(72%) sepia(0%) saturate(0%) hue-rotate(234deg) brightness(107%) contrast(98%);
+}
+
+.nav-option-picture-active{
+    filter: invert(0%) sepia(0%) saturate(7432%) hue-rotate(178deg) brightness(104%) contrast(100%);
+}
+
+.nav-option-title{
+    background-color: transparent;
+}

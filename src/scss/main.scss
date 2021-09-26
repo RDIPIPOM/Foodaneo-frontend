@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF
+}
+
+// import modules
+
+// fonts
+@import '../assets/fonts/Silka-Roman-Webfont/stylesheet.css';
+@import '../assets/fonts/Basier Circle Webfont/Basier-Circle-medium-webfont/stylesheet.css';
+@import '../assets/fonts/Basier Circle Webfont/Basier-Circle-semibold-webfont/stylesheet.css';
+@import '../assets/fonts/Basier Circle Webfont/Basier-Circle-regular-webfont/stylesheet.css';
+
+// DefaultLayout
+@import 'DefaultLayout/Header/skin';
+@import 'DefaultLayout/Header/skeleton';
+@import 'DefaultLayout/nav/skin';
+@import 'DefaultLayout/nav/skeleton';
+
+// Home
+@import 'Home/skin';
+@import 'Home/skeleton';
+
+//Menu
+@import 'Menu/skin';
+@import 'Menu/skeleton';

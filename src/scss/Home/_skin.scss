@@ -1,0 +1,69 @@
+//Home skin
+
+.CTA {
+    background: #EEEEEE;
+}
+
+.CTA-message{
+    font-family: silkamedium;
+    font-size: 24px;
+    background: transparent;
+    color: #363636;
+}
+
+.btnCTAOrder{
+    background-color: #C4C4C4;
+    color: #363636;
+    text-decoration: none;
+    font-family: silkasemibold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dish-category-menu{
+    margin-top: 48px;
+}
+
+h5[class="dish-category"]{
+    font-family: basier_circlesemibold;
+    font-size: 16px;
+    color: #818181;
+}
+
+.dish-card{
+    border-bottom: #E4E4E4 solid 1px;
+}
+
+.dish-card:first-of-type{
+    border-top: #E4E4E4 solid 1px;
+}
+
+.dish-title{
+    font-family: basier_circlemedium;
+    font-size: 18px;
+    color: #727272;
+}
+
+.dish-description{
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #727272;
+}
+
+.dish-location{
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #959595;
+}
+
+.dish-price{
+    font-family: basier_circlemedium;
+    font-size: 14px;
+    color: #959595;   
+}
+
+.btn-view-all{
+    font-family: basier_circleregular;
+    font-size: 16px;
+    color: #363636;   
+}
