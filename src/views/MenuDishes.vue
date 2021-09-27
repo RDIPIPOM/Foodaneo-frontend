@@ -1,15 +1,17 @@
 <template>
   <div>
     <Header></Header>
-    <div class="CTA">
-      <div class="CTA-message">
-      La primera comida es la más importante del día ¿Ya desayunaste?
-      </div>
-      <a class="btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
+    <div class="nav-menu">
+      <a href="./#/menu-dishes" class="nav-menu-option nav-menu-option-active">Platillos</a>
+      <a href="./#/menu-places" class="nav-menu-option">Lugares</a>
+    </div>
+    <div class="menu-title">
+      <h2 class="menu-title-h2">¿Qué se te antoja?</h2>
+      <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
       <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
+        <h3 class="dish-category">Comida</h3>
         <div class="dish-card">
           <div class="dish-body">
             <div class="dish-body-top">
@@ -61,7 +63,7 @@
         </div>
       </div>
       <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
+        <h3 class="dish-category">Comida</h3>
         <div class="dish-card">
           <div class="dish-body">
             <div class="dish-body-top">
@@ -113,7 +115,7 @@
         </div>
       </div>
       <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
+        <h3 class="dish-category">Comida</h3>
         <div class="dish-card">
           <div class="dish-body">
             <div class="dish-body-top">
@@ -166,7 +168,7 @@
       </div>
     </div>
     <div class="navigation-space"></div>
-    <Nav activeWindow="home"></Nav>
+    <Nav activeWindow="menu"></Nav>
   </div>
 </template>
 
@@ -175,7 +177,7 @@ import Header from '../components/Header.vue'
 import Nav from '../components/Nav.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'MenuDishesView',
   components: {
     Header,
     Nav

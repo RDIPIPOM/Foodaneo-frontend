@@ -5,7 +5,7 @@
                 <img class="nav-option-picture" v-bind:class="isHomeActive" src="../assets/img/home-icon.svg">
                 <p class="nav-option-title">Inicio</p>
             </a>
-            <a href="./#/menu" class="nav-option">
+            <a href="./#/menu-dishes" class="nav-option">
                 <img class="nav-option-picture" v-bind:class="isMenuActive" src="../assets/img/menu-icon.svg">
                 <p class="nav-option-title">Menú</p>
             </a>

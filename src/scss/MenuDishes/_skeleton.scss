@@ -1,0 +1,57 @@
+//Menu skeleton
+
+.nav-menu{
+    width: 100%;
+    height: 56px;
+    display: flex;
+}
+
+.nav-menu-option{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title{
+    width: 100%;
+    height: 20vh;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-title-h2{
+    margin-bottom: 8px;
+}
+
+.place-card{
+    padding: 16px 0 16px 0;
+}
+
+.place-image{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+.place-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 8px 0 8px;
+}
+
+.place-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
