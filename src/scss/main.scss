@@ -5,6 +5,10 @@
     background-color: #FFFFFF
 }
 
+// .opacity30{
+//     opacity: 0.3;
+// }
+
 // import modules
 
 // fonts
@@ -14,8 +18,6 @@
 @import '../assets/fonts/Basier Circle Webfont/Basier-Circle-regular-webfont/stylesheet.css';
 
 // DefaultLayout
-@import 'DefaultLayout/Header/skin';
-@import 'DefaultLayout/Header/skeleton';
 @import 'DefaultLayout/nav/skin';
 @import 'DefaultLayout/nav/skeleton';
 

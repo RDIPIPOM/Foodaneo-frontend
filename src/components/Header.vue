@@ -1,11 +1,11 @@
 <template>
-    <header class="header">
+    <header class="header" v-bind:class="{opacity30: cart}">
         <div class="title-foodaneo">
-            <div v-on:click="cart = !cart" class="cart" href="#Cart">
+            <div v-on:click="cart = true" class="btn-cart" href="#Cart">
                 <img src="../assets/img/cart.svg" alt="">
             </div>
         </div>
-        <Cart v-show="cart"></Cart>
+        <Cart v-on:close-cart="cart = false" v-show="cart"></Cart>
     </header>
 </template>
 
@@ -24,3 +24,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/components/Header/_skeleton.scss"></style>
+<style lang="scss" src="../scss/components/Header/_skin.scss"></style>
