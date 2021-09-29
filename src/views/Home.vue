@@ -182,3 +182,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/Home/_skeleton.scss"></style>
+<style lang="scss" src="../scss/Home/_skin.scss"></style>

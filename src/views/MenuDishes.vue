@@ -184,3 +184,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/MenuDishes/_skeleton.scss"></style>
+<style lang="scss" src="../scss/MenuDishes/_skin.scss"></style>
