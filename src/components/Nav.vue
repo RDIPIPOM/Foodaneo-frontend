@@ -54,3 +54,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/components/Nav/_skeleton.scss"></style>
+<style lang="scss" src="../scss/components/Nav/_skin.scss"></style>
