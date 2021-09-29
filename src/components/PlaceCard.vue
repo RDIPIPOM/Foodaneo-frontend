@@ -26,3 +26,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/components/PlaceCard/_skeleton.scss"></style>
+<style lang="scss" src="../scss/components/PlaceCard/_skin.scss"></style>

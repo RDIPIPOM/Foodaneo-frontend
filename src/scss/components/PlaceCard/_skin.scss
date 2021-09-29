@@ -1,0 +1,25 @@
+//PlaceCard skin
+
+.place-card{
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.place-card:first-of-type{
+    border-top: 1px solid #E4E4E4;
+}
+
+.place-image{
+    border-radius: 2px;
+}
+
+.place-name{
+    font-family: basier_circlemedium;
+    font-size: 18px;
+    color: #727272;
+}
+
+.place-status{
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #C4C4C4;
+}
