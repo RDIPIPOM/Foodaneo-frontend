@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import HomeView from '@/views/Home'
 import MenuDishesView from '@/views/MenuDishes'
 import MenuPlacesView from '@/views/MenuPlaces'
+import DishView from '@/views/Dish'
 import LoginView from '@/views/Login'
 
 Vue.use(Router)
@@ -25,6 +26,11 @@ export default new Router({
       path: '/menu-places',
       name: 'MenuPlacesView',
       component: MenuPlacesView
+    },
+    {
+      path: '/dish',
+      name: 'DishView',
+      component: DishView
     },
     {
       path: '/login',

@@ -1,5 +1,5 @@
 <template>
-  <div class="dish-card">
+  <a href="/#/dish" class="dish-card">
     <div class="dish-body">
       <div>
         <h4 class="dish-title">{{ dish.name }}</h4>
@@ -12,9 +12,8 @@
         </div>
       </div>
     </div>
-    <!-- <img class="dish-picture" src="@/assets/img/dish-pictures/chilaquiles.jpg"> -->
     <img class="dish-picture" v-bind:src='dish.path_photography'>
-  </div>
+  </a>
 </template>
 
 <script>
