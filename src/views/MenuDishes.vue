@@ -18,6 +18,14 @@
           <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
         </div>
       </div>
+      <div class="dish-category-menu">
+        <h3 class="dish-category">Comida</h3>
+        <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
+        <div class="btn-view-all">
+          <p class="text-view-all">Ver todos</p>
+          <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
+        </div>
+      </div>
     </div>
     <div class="navigation-space"></div>
     <Nav activeWindow="menu"></Nav>

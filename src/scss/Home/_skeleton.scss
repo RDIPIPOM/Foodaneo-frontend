@@ -35,13 +35,6 @@
     margin-bottom: 16px;
 }
 
-.dish-card{
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    display: flex;
-}
-
 .dish-card:last-child{
     border-bottom: #E4E4E4 solid 1px;
 }
@@ -84,8 +77,4 @@
     margin: 4px 0 0 4px;
     height: 10px;
     width: 20px;
-}
-
-.navigation-space{
-    height: 96px;
 }
