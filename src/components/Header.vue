@@ -1,5 +1,6 @@
 <template>
-    <header class="header" v-bind:class="{opacity30: cart}">
+    <header class="header">
+        <div v-bind:class="{'cover-cart': cart}"></div>
         <div class="title-foodaneo">
             <div v-on:click="cart = true" class="btn-cart" href="#Cart">
                 <img src="../assets/img/cart.svg" alt="">
