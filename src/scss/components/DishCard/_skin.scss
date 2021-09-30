@@ -1,0 +1,33 @@
+//DishCard skin
+
+.dish-card{
+    border-bottom: #E4E4E4 solid 1px;
+}
+
+.dish-card:first-of-type{
+    border-top: #E4E4E4 solid 1px;
+}
+
+.dish-title{
+    font-family: basier_circlemedium;
+    font-size: 18px;
+    color: #727272;
+}
+
+.dish-description{
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #727272;
+}
+
+.dish-location{
+    font-family: basier_circleregular;
+    font-size: 12px;
+    color: #959595;
+}
+
+.dish-price{
+    font-family: basier_circlemedium;
+    font-size: 14px;
+    color: #959595;   
+}

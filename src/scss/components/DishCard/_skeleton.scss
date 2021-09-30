@@ -1,0 +1,35 @@
+//DishCard skeleton
+
+.dish-card{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    display: flex;
+}
+
+.dish-card:last-child{
+    border-bottom: #E4E4E4 solid 1px;
+}
+
+.dish-body{
+    padding: 8px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dish-title{
+    margin-bottom: 4px;
+}
+
+.dish-location-price{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+}
+
+.dish-picture{
+    width: 15vh;
+    height: 15vh;
+}
