@@ -10,51 +10,7 @@
     <div class="dish-categories">
       <div class="dish-category-menu">
         <h5 class="dish-category">Desayunos para comenzar con todo</h5>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
+        <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>
           <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
@@ -62,103 +18,7 @@
       </div>
       <div class="dish-category-menu">
         <h5 class="dish-category">Desayunos para comenzar con todo</h5>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="btn-view-all">
-          <p class="text-view-all">Ver todos</p>
-          <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
-        </div>
-      </div>
-      <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
-        <div class="dish-card">
-          <div class="dish-body">
-            <div class="dish-body-top">
-              <h4 class="dish-title">Plato de desayuno</h4>
-              <p class="dish-description">Chilaquiles, huevo y café</p>
-            </div>
-            <div class="dish-body-bottom">
-              <div class="dish-location-price">
-                <p class="dish-location">Lonchería</p>
-                <p class="dish-price">$52.50</p>
-              </div>
-            </div>
-          </div>
-          <div class="dish-picture"></div>
-        </div>
+        <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>
           <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
@@ -172,12 +32,23 @@
 
 <script>
 import Header from '../components/Header.vue'
+import DishCard from '../components/DishCard.vue'
 import Nav from '../components/Nav.vue'
 
 export default {
   name: 'HomeView',
+  data: function () {
+    return {
+      dishes: [
+        { id: 1, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+        { id: 2, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+        { id: 3, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
+      ]
+    }
+  },
   components: {
     Header,
+    DishCard,
     Nav
   }
 }
