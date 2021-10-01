@@ -4,13 +4,13 @@
       <div class="cart-container">
         <div class="cart-header">
           <img v-on:click="$emit('close-cart')" class="btn-x" src="../assets/img/x-icon.svg">
-          <h4 class="text-shopping-cart">Carrito de compras</h4>
+          <h4 class="h4 text-shopping-cart">Carrito de compras</h4>
         </div>
-        <div class="cart-title-articles">Artículos (1)</div>
+        <h6 class="h6 cart-title-articles">Artículos (1)</h6>
         <div class="cart-article">
           <div class="cart-article-body">
-            <h6 class="cart-article-title">Sandwich</h6>
-            <div class="cart-article-note">Sin jitomate, con poco aderezo</div>
+            <h6 class="h6 cart-article-title">Sandwich</h6>
+            <div class="medium-body cart-article-note">Sin jitomate, con poco aderezo</div>
             <div class="cart-article-price">$64.79</div>
           </div>
           <img class="cart-article-image">
