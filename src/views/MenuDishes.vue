@@ -10,22 +10,7 @@
       <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
-      <div class="dish-category-menu">
-        <h3 class="h3 dish-category">Comida</h3>
-        <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
-        <div class="btn-view-all">
-          <p class="text-view-all">Ver todos</p>
-          <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
-        </div>
-      </div>
-      <div class="dish-category-menu">
-        <h3 class="h3 dish-category">Comida</h3>
-        <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
-        <div class="btn-view-all">
-          <p class="text-view-all">Ver todos</p>
-          <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
-        </div>
-      </div>
+      <DishCategoryCardMenu v-for="dishCategory in dishCategories" v-bind:key="dishCategory.id" v-bind:dishCategory="dishCategory"></DishCategoryCardMenu>
     </div>
     <div class="navigation-space"></div>
     <Nav activeWindow="menu"></Nav>
@@ -34,23 +19,47 @@
 
 <script>
 import Header from '../components/Header.vue'
-import DishCard from '../components/DishCard.vue'
+import DishCategoryCardMenu from '../components/DishCategoryCardMenu.vue'
 import Nav from '../components/Nav.vue'
 
 export default {
   name: 'MenuDishesView',
   data: function () {
     return {
-      dishes: [
-        { id: 1, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-        { id: 2, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-        { id: 3, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
+      dishCategories: [
+        {
+          id: 1,
+          name: 'Desayunos para comenzar con todo',
+          dishes: [
+            { id: 1, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 2, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 3, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
+          ]
+        },
+        {
+          id: 2,
+          name: 'Ofertas del día',
+          dishes: [
+            { id: 4, name: 'Almuerzo 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 5, name: 'Almuerzo 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 6, name: 'Almuerzo 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
+          ]
+        },
+        {
+          id: 3,
+          name: 'Para despertar',
+          dishes: [
+            { id: 7, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 8, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
+            { id: 9, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
+          ]
+        }
       ]
     }
   },
   components: {
     Header,
-    DishCard,
+    DishCategoryCardMenu,
     Nav
   }
 }
