@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <img class="dish-picture" v-bind:src='dish.path_photography'>
+    <img class="dish-picture" v-bind:src="dish.path_photography">
   </a>
 </template>
 

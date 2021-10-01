@@ -10,10 +10,7 @@
       <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
-      <PlaceCard placeStatus="Abierto"></PlaceCard>
-      <PlaceCard placeStatus="Cerrado"></PlaceCard>
-      <PlaceCard placeStatus="Abierto"></PlaceCard>
-      <PlaceCard placeStatus="Abierto"></PlaceCard>
+      <PlaceCard v-for="place in places" v-bind:key="place.id" v-bind:place="place"></PlaceCard>
     </div>
     <div class="navigation-space"></div>
     <Nav activeWindow="menu"></Nav>
@@ -27,6 +24,15 @@ import Nav from '../components/Nav.vue'
 
 export default {
   name: 'MenuDishesView',
+  data: function () {
+    return {
+      places: [
+        { id: 1, name: 'Lonchería 1', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
+        { id: 2, name: 'Lonchería 2', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
+        { id: 3, name: 'Lonchería 3', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') }
+      ]
+    }
+  },
   components: {
     Header,
     PlaceCard,
