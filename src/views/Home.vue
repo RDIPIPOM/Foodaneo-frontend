@@ -2,14 +2,12 @@
   <div>
     <Header></Header>
     <div class="CTA">
-      <div class="CTA-message">
-      La primera comida es la más importante del día ¿Ya desayunaste?
-      </div>
-      <a class="btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
+      <h1 class="h1 CTA-message">La primera comida es la más importante del día ¿Ya desayunaste?</h1>
+      <a class="button btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
     </div>
     <div class="dish-categories">
       <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
+        <h5 class="h5 dish-category">Desayunos para comenzar con todo</h5>
         <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>
@@ -17,7 +15,7 @@
         </div>
       </div>
       <div class="dish-category-menu">
-        <h5 class="dish-category">Desayunos para comenzar con todo</h5>
+        <h5 class="h5 dish-category">Desayunos para comenzar con todo</h5>
         <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>

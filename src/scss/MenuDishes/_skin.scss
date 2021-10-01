@@ -1,43 +1,43 @@
 //Menu skin
 
 .nav-menu{
-    background-color: #FFFFFF;
     font-family: basier_circlemedium;
     font-size: 14px;
 }
 
 .nav-menu-option{
-    color: #C4C4C4;
+    color: var(--unactive-icons);
 }
 
 .nav-menu-option-active{
-    border-bottom: 2px solid black;
-    color: #363636;
+    border-bottom: 2px solid var(--foodaneo);
+    color: var(--foodaneo);
 }
 
 .menu-title{
-    color: #818181;
     text-align: center;
 }
 
 .menu-title-h2{
     font-family: silkamedium;
     font-size: 22px;
+    color: var(--bold-text);
 }
 
 .menu-title-p{
     font-family: basier_circleregular;
     font-size: 16px;
+    color: var(--common-body);
 }
 
-h3[class="dish-category"]{
+.dish-category{
     font-family: basier_circlemedium;
     font-size: 20px;
-    color: #363636;
+    color: var(--bold-text);
 }
 
 .btn-view-all{
     font-family: basier_circleregular;
     font-size: 16px;
-    color: #363636;   
+    color: var(--black);   
 }

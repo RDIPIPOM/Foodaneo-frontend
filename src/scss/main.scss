@@ -1,8 +1,85 @@
-*{
+:root {
+    --white-over-green: #F8FFF8;
+    --bold-text: #495057;
+    --positive: #34B680;
+    --lighter-body: #818181;
+    --foodaneo: #58C755;
+    --unactive-icons: #C4C4C4;
+    --common-body: #676767;
+    --black: #363636;
+    --green-gradient: linear-gradient(270deg, #FFE600 -17.34%, #34C94C 24.61%, #34B680 73.55%, #34A5C9 122.5%);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #FFFFFF
+}
+
+.h1 {
+    font-family: silkasemibold;
+    font-size: 24px;
+}
+
+.h2 {
+    font-family: silkamedium;
+    font-size: 22px;
+}
+
+.h3 {
+    font-family: basier_circlemedium;
+    font-size: 20px;
+}
+
+.h4 {
+    font-family: basier_circlemedium;
+    font-size: 18px;
+}
+
+.h5 {
+    font-family: basier_circlesemibold;
+    font-size: 16px;
+}
+
+.h6 {
+    font-family: basier_circlesemibold;
+    font-size: 14px;
+}
+
+.body {
+    font-family: basier_circleregular;
+    font-size: 16px;
+}
+
+.small-body {
+    font-family: basier_circleregular;
+    font-size: 12px;
+}
+
+.medium-body {
+    font-family: basier_circleregular;
+    font-size: 14px;
+}
+
+.small-links {
+    font-family: basier_circlemedium;
+    font-size: 14px;
+}
+
+.button {
+    font-family: silkasemibold;
+    font-size: 16px;
+}
+
+.primary-nav-link {
+    font-family: silkasemibold;
+    font-size: 16px;
+}
+
+.price-tag {
+    font-family: basier_circlemedium;
+    font-size: 14px;
 }
 
 a{

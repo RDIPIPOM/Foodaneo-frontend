@@ -15,11 +15,11 @@
 .place-name{
     font-family: basier_circlemedium;
     font-size: 18px;
-    color: #727272;
+    color: var(--bold-text);
 }
 
 .place-status{
     font-family: basier_circleregular;
     font-size: 12px;
-    color: #C4C4C4;
+    color: var(--positive);
 }

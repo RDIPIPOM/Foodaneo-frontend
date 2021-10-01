@@ -2,13 +2,13 @@
   <a href="/#/dish" class="dish-card">
     <div class="dish-body">
       <div>
-        <h4 class="dish-title">{{ dish.name }}</h4>
-        <p class="dish-description">{{ dish.description }}</p>
+        <h4 class="h4 dish-title">{{ dish.name }}</h4>
+        <p class="small-body dish-description">{{ dish.description }}</p>
       </div>
       <div>
         <div class="dish-location-price">
-          <p class="dish-location">{{ dish.location }}</p>
-          <p class="dish-price">{{ dish.price }}</p>
+          <p class="small-body dish-location">{{ dish.location }}</p>
+          <p class="price-tag dish-price">{{ dish.price }}</p>
         </div>
       </div>
     </div>
