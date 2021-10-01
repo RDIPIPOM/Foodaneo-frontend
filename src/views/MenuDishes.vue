@@ -6,12 +6,12 @@
       <a href="./#/menu-places" class="nav-menu-option">Lugares</a>
     </div>
     <div class="menu-title">
-      <h2 class="menu-title-h2">¿Qué se te antoja?</h2>
+      <h1 class="h1 menu-title-h1">¿Qué se te antoja?</h1>
       <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
       <div class="dish-category-menu">
-        <h3 class="dish-category">Comida</h3>
+        <h3 class="h3 dish-category">Comida</h3>
         <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="dish-category-menu">
-        <h3 class="dish-category">Comida</h3>
+        <h3 class="h3 dish-category">Comida</h3>
         <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
         <div class="btn-view-all">
           <p class="text-view-all">Ver todos</p>

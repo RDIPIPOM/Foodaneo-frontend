@@ -6,7 +6,7 @@
       <a href="./#/menu-places" class="nav-menu-option nav-menu-option-active">Lugares</a>
     </div>
     <div class="menu-title">
-      <h2 class="menu-title-h2">Ordena de los lugares que más te gustan</h2>
+      <h1 class="h1 menu-title-h1">Ordena de los lugares que más te gustan</h1>
       <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
