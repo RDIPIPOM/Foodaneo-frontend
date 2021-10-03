@@ -14,44 +14,30 @@
 </template>
 
 <script>
+// Components
 import Header from '../components/Header.vue'
 import DishCategoryCardHome from '../components/DishCategoryCardHome.vue'
 import Nav from '../components/Nav.vue'
+
+// Services
+import { getDishes } from '@/services/dishes'
 
 export default {
   name: 'HomeView',
   data: function () {
     return {
-      dishCategories: [
-        {
-          id: 1,
-          name: 'Desayunos para comenzar con todo',
-          dishes: [
-            { id: 1, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 2, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 3, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
-          ]
-        },
-        {
-          id: 2,
-          name: 'Ofertas del día',
-          dishes: [
-            { id: 4, name: 'Almuerzo 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 5, name: 'Almuerzo 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 6, name: 'Almuerzo 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
-          ]
-        },
-        {
-          id: 3,
-          name: 'Para despertar',
-          dishes: [
-            { id: 7, name: 'Plato de desayuno 1', description: 'Chilaquiles, huevo y café 1', location: 'Lonchería 1', price: '$51.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 8, name: 'Plato de desayuno 2', description: 'Chilaquiles, huevo y café 2', location: 'Lonchería 2', price: '$52.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') },
-            { id: 9, name: 'Plato de desayuno 3', description: 'Chilaquiles, huevo y café 3', location: 'Lonchería 3', price: '$53.50', path_photography: require('../assets/img/dish-pictures/chilaquiles.jpg') }
-          ]
-        }
-      ]
+      dishCategories: []
     }
+  },
+  created: function () {
+    getDishes().then((res) => {
+      this.dishCategories = res.data
+      this.dishCategories.forEach((category, index) => {
+        this.dishCategories[index]['dishes'].forEach((dish, dishIndex) => {
+          this.dishCategories[index]['dishes'][dishIndex]['dish_path_photography'] = require('../assets/img/' + dish['dish_path_photography'])
+        })
+      })
+    }).catch(err => console.log(err))
   },
   components: {
     Header,
