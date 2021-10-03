@@ -20,7 +20,7 @@ import DishCategoryCardHome from '../components/DishCategoryCardHome.vue'
 import Nav from '../components/Nav.vue'
 
 // Services
-import { getDishes } from '@/services/dishes'
+import { getDishesLandingPage } from '@/services/dishes'
 
 export default {
   name: 'HomeView',
@@ -30,7 +30,7 @@ export default {
     }
   },
   created: function () {
-    getDishes().then((res) => {
+    getDishesLandingPage().then((res) => {
       this.dishCategories = res.data
       this.dishCategories.forEach((category, index) => {
         this.dishCategories[index]['dishes'].forEach((dish, dishIndex) => {
