@@ -34,7 +34,7 @@ export default {
       this.dishCategories = res.data
       this.dishCategories.forEach((category, index) => {
         this.dishCategories[index]['dishes'].forEach((dish, dishIndex) => {
-          this.dishCategories[index]['dishes'][dishIndex]['dish_path_photography'] = require('../assets/img/' + dish['dish_path_photography'])
+          this.dishCategories[index]['dishes'][dishIndex]['dish_path_photography'] = require('../assets/img/dish-pictures/' + dish['dish_path_photography'])
         })
       })
     }).catch(err => console.log(err))
