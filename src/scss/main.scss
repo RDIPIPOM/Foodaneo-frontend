@@ -8,6 +8,11 @@
     --common-body: #676767;
     --black: #363636;
     --unknown-gray: #727272;
+    --text-box: #BDBDBD;
+    --kinda-bold-text: #818181;
+    --placeholder: #BDBDBD;
+    --disabled: #EEEEEE;
+    --disabled-text: #CBCBCB;
     --green-gradient: linear-gradient(270deg, #FFE600 -17.34%, #34C94C 24.61%, #34B680 73.55%, #34A5C9 122.5%);
 }
 
@@ -83,11 +88,26 @@
     font-size: 14px;
 }
 
-a{
+.price-tag {
+    font-family: basier_circlemedium;
+    font-size: 14px;
+}
+
+.log-in-text {
+    font-family: basier_circleregular;
+    font-size: 24px;
+}
+
+a {
     text-decoration: none;
 }
 
-.navigation-space{
+::placeholder {
+    color: var(--placeholder);
+    opacity: 1; /* Firefox */
+}
+
+.navigation-space {
     height: 96px;
 }
 

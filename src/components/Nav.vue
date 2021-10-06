@@ -16,7 +16,7 @@
                 <img class="nav-option-picture" v-else src="../assets/img/orders-icon.svg">
                 <p class="nav-option-title">Pedidos</p>
             </a>
-            <a href="" class="nav-option">
+            <a href="./#/login" class="nav-option">
                 <img class="nav-option-picture" v-if="this.activeWindow === 'profile'" src="../assets/img/profile-active-icon.svg">
                 <img class="nav-option-picture" v-else src="../assets/img/profile-icon.svg">
                 <p class="nav-option-title">Cuenta</p>
