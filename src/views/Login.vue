@@ -6,9 +6,9 @@
     <h1 class="h1 text-registro">Ingresar</h1>
     <form class="formLogin" action="">
       <label for="input-email" class="body loginLabel">Correo electrónico:</label>
-      <input type="email" v-model="email" name="input-email" class="log-in-text loginInput" autocomplete="username" placeholder="foodaneo@ucol.mx">
+      <input type="email" v-model="email" name="input-email" class="body loginInput" autocomplete="username" placeholder="foodaneo@ucol.mx">
       <label for="input-password" class="body loginLabel">Contraseña:</label>
-      <input type="password" v-model="password" name="input-password" class="log-in-text loginInput" autocomplete="current-password" placeholder="Contraseña">
+      <input type="password" v-model="password" name="input-password" class="body loginInput" autocomplete="current-password" placeholder="Contraseña">
       <p v-show="error !== ''" class="medium-body login-invalid-field-error">{{error}}</p>
       <input v-on:click="signin" type="submit" class="button loginInput loginSubmit" value="Ingresar" :disabled="isDisabled">
       <p class="medium-body text-switch-register">¿No tienes una cuenta? <a class="btn-switch-register" href="./#/signup">Regístrate</a></p>

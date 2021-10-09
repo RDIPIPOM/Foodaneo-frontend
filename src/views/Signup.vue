@@ -6,7 +6,7 @@
     <h1 class="h1 text-registro">Registro</h1>
     <form class="formLogin" action="./#/signup2">
       <label for="input-phone" class="body loginLabel">Para comenzar, escribe tu número de teléfono:</label>
-      <input type="number" v-model="phone" name="input-phone" class="log-in-text loginInput" autocomplete="phone" placeholder="XXX-XXX-XXXX">
+      <input type="number" v-model="phone" name="input-phone" class="body loginInput" autocomplete="phone" placeholder="XXX-XXX-XXXX">
       <input type="submit" class="button loginInput loginSubmit" value="Continuar" :disabled="isDisabled">
       <p class="medium-body text-switch-login">¿Ya tienes una cuenta? <a class="btn-switch-login" href="./#/login">Inicia sesión</a></p>
     </form>

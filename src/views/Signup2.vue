@@ -6,19 +6,19 @@
     <h1 class="h1 text-registro">Registro</h1>
     <form class="formLogin" action="">
       <label for="input-first-name" class="body loginLabel">Nombre:</label>
-      <input type="text" v-model="user_data.first_name" name="input-first-name" class="log-in-text loginInput" autocomplete="firstname" placeholder="Ramón Alejandro">
+      <input type="text" v-model="user_data.first_name" name="input-first-name" class="body loginInput" autocomplete="firstname" placeholder="Ramón Alejandro">
       <p v-show="first_name_error !== ''" class="medium-body login-invalid-field-error">{{first_name_error}}</p>
       <label for="input-last-name" class="body loginLabel">Apellidos:</label>
-      <input type="text" v-model="user_data.last_name" name="input-last-name" class="log-in-text loginInput" autocomplete="lastname" placeholder="Hernández García">
+      <input type="text" v-model="user_data.last_name" name="input-last-name" class="body loginInput" autocomplete="lastname" placeholder="Hernández García">
       <p v-show="last_name_error !== ''" class="medium-body login-invalid-field-error">{{last_name_error}}</p>
       <label for="input-email" class="body loginLabel">Correo electrónico:</label>
-      <input type="text" v-model="user_data.email" name="input-email" class="log-in-text loginInput" autocomplete="email" placeholder="foodaneo@ucol.mx">
+      <input type="text" v-model="user_data.email" name="input-email" class="body loginInput" autocomplete="email" placeholder="foodaneo@ucol.mx">
       <p v-show="email_error !== ''" class="medium-body login-invalid-field-error">{{email_error}}</p>
       <label for="input-password" class="body loginLabel">Contraseña:</label>
-      <input type="password" v-model="user_data.password" name="input-password" class="log-in-text loginInput" autocomplete="password" placeholder="Contraseña">
+      <input type="password" v-model="user_data.password" name="input-password" class="body loginInput" autocomplete="password" placeholder="Contraseña">
       <p v-show="password_error !== ''" class="medium-body login-invalid-field-error">{{password_error}}</p>
       <label for="input-passwordconfirm" class="body loginLabel">Confirmar contraseña:</label>
-      <input type="password" v-model="user_data.passwordconfirm" name="input-passwordconfirm" class="log-in-text loginInput" autocomplete="passwordconfirm" placeholder="Contraseña">
+      <input type="password" v-model="user_data.passwordconfirm" name="input-passwordconfirm" class="body loginInput" autocomplete="passwordconfirm" placeholder="Contraseña">
       <p v-show="passwordconfirm_error !== ''" class="medium-body login-invalid-field-error">{{passwordconfirm_error}}</p>
       <input v-on:click="signup" type="submit" class="button loginInput loginSubmit" value="Continuar" :disabled="isDisabled">
       <p class="medium-body text-switch-login">¿Ya tienes una cuenta? <a class="btn-switch-login" href="./#/login">Inicia sesión</a></p>
