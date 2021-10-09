@@ -9,9 +9,9 @@
     </div>
     <div class="profile-container-bottom">
       <div class="medium-body profile-text-detail">Correo electrónico</div>
-      <div class="body profile-detail">olivia_sour@ucol.mx</div>
+      <div class="body profile-detail">{{email}}</div>
       <div class="medium-body profile-text-detail">Teléfono</div>
-      <div class="body profile-detail">+52 312-155-1464</div>
+      <div class="body profile-detail">{{phone}}</div>
       <a v-on:click="logOut" class="btn-log-out">
         <img src="../assets/img/log-out-icon.svg" alt="">
         <p class="small-links text-log-out">Cerrar sesión</p>
@@ -34,12 +34,16 @@ export default {
   data: function () {
     return {
       date: new Date(),
-      first_name: ''
+      first_name: '',
+      email: '',
+      phone: ''
     }
   },
   created: function () {
     getUser(localStorage.user_id).then(res => {
       this.first_name = res.data.first_name
+      this.email = res.data.email
+      this.phone = res.data.phone
     }).catch(err => console.log(err))
   },
   methods: {
