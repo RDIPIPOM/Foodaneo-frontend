@@ -18,9 +18,39 @@
 }
 
 .cart-title-articles {
-    color: var(--foodaneo);
+    color: var(--positive);
+}
+
+.cart-article-title{
+    color: var(--bold-text);
+}
+
+.cart-article-price {
+    color: var(--bold-text);
 }
 
 .cart-article-note {
-    color: var(--unknown-gray);
+    color: var(--kinda-bold-text);
+}
+
+.cart-subtotal-text{
+    color: var(--bold-text);
+}
+
+.cart-subtotal{
+    color: var(--positive);
+}
+
+.btn-option-cart{
+    border: 1px solid var(--black);
+    border-radius: 4px;
+}
+
+.btn-add-articles{
+    color: var(--bold-text);
+}
+
+.btn-finish-order{
+    background-color: var(--black);
+    color: var(--white-over-green);
 }
