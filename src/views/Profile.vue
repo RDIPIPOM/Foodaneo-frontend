@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="profile-container-top">
       <div class="medium-body welcomeGreet">{{getGreet()}}, bienvenido</div>
-      <h2 class="h2 profile-name">Olivia Rodríguez</h2>
+      <h2 class="h2 profile-name">{{first_name}}</h2>
       <div class="medium-body profile-text-pedidos-realizados">Pedidos realizados</div>
       <div class="log-in-text profile-orders">12</div>
     </div>
@@ -26,12 +26,21 @@
 import Header from '../components/Header.vue'
 import Nav from '../components/Nav.vue'
 
+// Services
+import { getUser } from '@/services/users'
+
 export default {
   name: 'ProfileView',
   data: function () {
     return {
-      date: new Date()
+      date: new Date(),
+      first_name: ''
     }
+  },
+  created: function () {
+    getUser(localStorage.user_id).then(res => {
+      this.first_name = res.data.first_name
+    }).catch(err => console.log(err))
   },
   methods: {
     getGreet: function () {

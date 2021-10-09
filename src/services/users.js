@@ -10,7 +10,12 @@ let signup = (params) => {
   return axios.post(`${BASE_URL}/signup`, params)
 }
 
+let getUser = (id) => {
+  return axios.get(`${BASE_URL}/${id}`)
+}
+
 export {
   signin,
-  signup
+  signup,
+  getUser
 }
