@@ -2,12 +2,12 @@ import axios from 'axios'
 
 const BASE_URL = 'http://localhost:3000/users'
 
-let signin = () => {
-  return axios.get(`${BASE_URL}/signin`)
+let signin = (params) => {
+  return axios.post(`${BASE_URL}/signin`, params)
 }
 
-let signup = () => {
-  return axios.post(`${BASE_URL}/signup`)
+let signup = (params) => {
+  return axios.post(`${BASE_URL}/signup`, params)
 }
 
 export {

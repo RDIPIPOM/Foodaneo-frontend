@@ -1,0 +1,42 @@
+//Signup skin
+
+.text-registro {
+    color: var(--bold-text);
+}
+
+.loginLabel {
+    color: var(--common-body);
+}
+
+.loginInput {
+    border: 1px solid var(--text-box);
+    color: var(--kinda-bold-text);
+}
+
+.loginInput:focus {
+    outline: none;
+    border: 1px solid var(--positive);
+}
+
+.login-invalid-field-error{
+    color: var(--wrong);
+}
+
+.loginSubmit {
+    background-color: var(--positive);
+    color: var(--white-over-green);
+}
+
+.loginSubmit:disabled {
+    background-color: var(--disabled);
+    color: var(--disabled-text);
+}
+
+.text-switch-login{
+    color: var(--kinda-bold-text);
+}
+
+.btn-switch-login{
+    color: var(--positive);
+    text-decoration: underline;
+}

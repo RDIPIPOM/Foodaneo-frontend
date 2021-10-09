@@ -7,6 +7,8 @@ import MenuDishesView from '@/views/MenuDishes'
 import MenuPlacesView from '@/views/MenuPlaces'
 import DishView from '@/views/Dish'
 import LoginView from '@/views/Login'
+import SignupView from '@/views/signup'
+import Signup2View from '@/views/signup2'
 
 Vue.use(Router)
 
@@ -36,6 +38,16 @@ export default new Router({
       path: '/login',
       name: 'LoginView',
       component: LoginView
+    },
+    {
+      path: '/signup',
+      name: 'SignupView',
+      component: SignupView
+    },
+    {
+      path: '/signup2',
+      name: 'Signup2View',
+      component: Signup2View
     }
   ]
 })
