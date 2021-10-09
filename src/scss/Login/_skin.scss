@@ -18,6 +18,10 @@
     border: 1px solid var(--positive);
 }
 
+.login-invalid-field-error{
+    color: var(--wrong);
+}
+
 .loginSubmit {
     background-color: var(--positive);
     color: var(--white-over-green);

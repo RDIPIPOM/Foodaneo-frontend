@@ -9,6 +9,7 @@
       <input type="email" v-model="email" name="input-email" class="log-in-text loginInput" autocomplete="username" placeholder="foodaneo@ucol.mx">
       <label for="input-password" class="body loginLabel">Contraseña:</label>
       <input type="password" v-model="password" name="input-password" class="log-in-text loginInput" autocomplete="current-password" placeholder="Contraseña">
+      <p v-show="error !== ''" class="medium-body login-invalid-field-error">{{error}}</p>
       <input v-on:click="signin" type="submit" class="button loginInput loginSubmit" value="Ingresar" :disabled="isDisabled">
       <p class="medium-body text-switch-register">¿No tienes una cuenta? <a class="btn-switch-register" href="./#/signup">Regístrate</a></p>
     </form>
@@ -29,7 +30,8 @@ export default {
   data: function () {
     return {
       email: '',
-      password: ''
+      password: '',
+      error: ''
     }
   },
   computed: {
@@ -48,8 +50,16 @@ export default {
         'password': this.password
       }
       signin(params).then((res) => {
-        localStorage.user_id = res.data
-        this.$router.push({name: 'HomeView'})
+        if (typeof (res.data) === 'number') {
+          localStorage.user_id = res.data
+          this.$router.push({name: 'HomeView'})
+        } else {
+          switch (res.data['error_code']) {
+            case 'signinerror1':
+              this.error = 'Usuario o contraseña incorrecto'
+              break
+          }
+        }
       }).catch(err => console.log(err))
     }
   },
