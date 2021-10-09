@@ -16,7 +16,7 @@
                 <img class="nav-option-picture" v-else src="../assets/img/orders-icon.svg">
                 <p class="nav-option-title">Pedidos</p>
             </a>
-            <a href="./#/login" class="nav-option">
+            <a v-on:click="profileView" class="nav-option">
                 <img class="nav-option-picture" v-if="this.activeWindow === 'profile'" src="../assets/img/profile-active-icon.svg">
                 <img class="nav-option-picture" v-else src="../assets/img/profile-icon.svg">
                 <p class="nav-option-title">Cuenta</p>
@@ -28,7 +28,17 @@
 <script>
 export default {
   name: 'Nav',
-  props: ['activeWindow']
+  props: ['activeWindow'],
+  methods: {
+    profileView: function (e) {
+      e.preventDefault()
+      if (!isNaN(localStorage.user_id)) {
+        this.$router.push({name: 'ProfileView'})
+      } else {
+        this.$router.push({name: 'LoginView'})
+      }
+    }
+  }
 }
 </script>
 

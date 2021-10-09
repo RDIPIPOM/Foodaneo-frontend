@@ -1,4 +1,5 @@
 :root {
+    --navbar-background: #FDFDFD;
     --white-over-green: #F8FFF8;
     --bold-text: #495057;
     --positive: #34B680;
@@ -12,8 +13,9 @@
     --placeholder: #BDBDBD;
     --disabled: #EEEEEE;
     --disabled-text: #CBCBCB;
-    --wrong: #FF0000;
+    --wrong: #E50000;
     --line: #E4E4E4;
+    --ticket-background: #FBFBFB;
     --green-gradient: linear-gradient(270deg, #FFE600 -17.34%, #34C94C 24.61%, #34B680 73.55%, #34A5C9 122.5%);
 }
 
@@ -31,7 +33,7 @@
 
 .h2 {
     font-family: silkamedium;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .h3 {

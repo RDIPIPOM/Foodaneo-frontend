@@ -7,8 +7,9 @@ import MenuDishesView from '@/views/MenuDishes'
 import MenuPlacesView from '@/views/MenuPlaces'
 import DishView from '@/views/Dish'
 import LoginView from '@/views/Login'
-import SignupView from '@/views/signup'
-import Signup2View from '@/views/signup2'
+import SignupView from '@/views/Signup'
+import Signup2View from '@/views/Signup2'
+import ProfileView from '@/views/Profile'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/signup2',
       name: 'Signup2View',
       component: Signup2View
+    },
+    {
+      path: '/profile',
+      name: 'ProfileView',
+      component: ProfileView
     }
   ]
 })

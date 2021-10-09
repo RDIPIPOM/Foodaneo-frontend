@@ -1,0 +1,36 @@
+//Profile skin
+
+.profile-container-top{
+    background-color: var(--ticket-background);
+}
+
+.welcomeGreet{
+    background-color: transparent;
+    color: var(--kinda-bold-text);
+}
+
+.profile-name{
+    color: var(--black);
+}
+
+.profile-text-pedidos-realizados{
+    color: var(--positive);
+}
+
+.profile-orders{
+    color: var(--black);
+}
+
+.profile-text-detail{
+    color: var(--kinda-bold-text);
+}
+
+.profile-detail{
+    color: var(--common-body);
+}
+
+.btn-log-out {
+    color: var(--wrong);
+    border: 1px solid var(--wrong);
+    border-radius: 6px;
+}
