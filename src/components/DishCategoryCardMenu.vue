@@ -15,6 +15,9 @@ import DishCard from './DishCard.vue'
 export default {
   name: 'DishCategoryCardMenu',
   props: ['dishCategory'],
+  created: function () {
+    this.dishCategory['dishes'].length = 3
+  },
   components: {
     DishCard
   }

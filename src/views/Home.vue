@@ -61,7 +61,6 @@ export default {
       this.dishCategoryOffers['dishes'].forEach(dish => {
         dish.dish_path_photography = require('../assets/img/dish-pictures/' + dish.dish_path_photography)
       })
-      console.log(this.dishCategoryOffers['dishes'])
     }).catch(err => console.log(err))
   },
   methods: {
@@ -72,7 +71,6 @@ export default {
         this.dishCategoryTime['dishes'].forEach(dish => {
           dish.dish_path_photography = require('../assets/img/dish-pictures/' + dish.dish_path_photography)
         })
-        console.log(this.dishCategoryTime['dishes'])
       }).catch(err => console.log(err))
     }
   },

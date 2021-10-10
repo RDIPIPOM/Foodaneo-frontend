@@ -33,8 +33,9 @@ export default {
     }
   },
   created: function () {
-    getDishes().then((res) => {
+    getDishes(0).then((res) => {
       this.dishCategories = res.data
+      console.log(this.dishCategories)
       this.dishCategories.forEach((category, index) => {
         this.dishCategories[index]['dishes'].forEach((dish, dishIndex) => {
           this.dishCategories[index]['dishes'][dishIndex]['dish_path_photography'] = require('../assets/img/dish-pictures/' + dish['dish_path_photography'])
