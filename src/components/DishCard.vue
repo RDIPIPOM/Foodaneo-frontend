@@ -3,12 +3,16 @@
     <div class="dish-body">
       <div>
         <h4 class="h4 dish-title">{{ dish.dish_name }}</h4>
-        <p class="small-body dish-description">{{ dish.dish_description }}</p>
+        <p class="small-body dish-description">{{ dish.dish_short_description }}</p>
       </div>
       <div>
         <div class="dish-location-price">
-          <p class="small-body dish-location">{{ dish.location }}</p>
-          <p class="price-tag dish-price">{{'$' + dish.dish_price }}</p>
+          <p class="small-body dish-location">{{ dish.restaurant_name }}</p>
+          <p v-if="!dish.dish_discount_price" class="price-tag dish-price">{{'$' + dish.dish_price}}</p>
+          <div class="dish-price-discount" v-else>
+            <p class="price-tag dish-price">{{'$' + dish.dish_discount_price}}&nbsp;</p>
+            <p class="discounted-price-tag dish-price">{{'$' + dish.dish_price}}</p>
+          </div>
         </div>
       </div>
     </div>

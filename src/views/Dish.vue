@@ -1,9 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <div>
-      <div></div>
-    </div>
+    <img src="" alt="">
     <div class="navigation-space"></div>
     <Nav activeWindow="menu"></Nav>
   </div>

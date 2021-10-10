@@ -91,9 +91,10 @@
     font-size: 14px;
 }
 
-.price-tag {
-    font-family: basier_circlemedium;
+.discounted-price-tag {
+    font-family: basier_circleregular;
     font-size: 14px;
+    text-decoration: line-through;
 }
 
 .log-in-text {
