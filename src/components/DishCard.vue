@@ -1,5 +1,5 @@
 <template>
-  <a href="/#/dish" class="dish-card">
+  <a v-on:click="$router.push({name: 'DishView', params: dish})" class="dish-card" v-bind:dish="dish">
     <div class="dish-body">
       <div>
         <h4 class="h4 dish-title">{{ dish.dish_name }}</h4>

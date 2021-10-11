@@ -1,1 +1,56 @@
 //Dish skin
+
+.dish-title {
+    color: var(--positive);
+}
+
+.dish-location {
+    color: var(--lighter-body);
+}
+
+.dish-description {
+    color: var(--kinda-bold-text);
+}
+
+.dish-separator {
+    background-color: #F5F5F5;
+    color: var(--black);
+}
+
+.dish-separator-text {
+    background-color: transparent;
+}
+
+.counter {
+    background-color: #F0F0F0;
+}
+
+.btn-counter-disabled {
+    color: #F0F0F0;
+}
+
+.counter-number {
+    background-color: transparent;
+}
+
+.preparation-notes {
+    color: var(--kinda-bold-text);
+    border: 1px solid var(--text-box);
+    resize: none;
+    outline: none;
+}
+
+.preparation-notes:focus {
+    border: 1px solid var(--positive);
+}
+
+.btn-add-cart {
+    background-color: var(--positive);
+    color: var(--white-over-green);
+    border: 1px solid var(--text-box);    
+}
+
+.btn-add-cart:disabled {
+    background-color: var(--disabled);
+    color: var(--disabled-text);
+}
