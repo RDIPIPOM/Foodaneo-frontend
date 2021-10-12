@@ -14,8 +14,13 @@ let getUser = (id) => {
   return axios.get(`${BASE_URL}/${id}`)
 }
 
+let createOrder = (idUser, params) => {
+  return axios.post(`${BASE_URL}/${idUser}/order_detail`, params)
+}
+
 export {
   signin,
   signup,
-  getUser
+  getUser,
+  createOrder
 }

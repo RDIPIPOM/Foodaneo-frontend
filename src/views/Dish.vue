@@ -21,7 +21,7 @@
       <h4 class="h4 dish-separator-text">¿Alguna nota sobre la preparación?</h4>
     </div>
     <div class="preparation-notes-container">
-      <textarea class="body preparation-notes"></textarea>
+      <textarea v-model="comments" class="body preparation-notes"></textarea>
     </div>
     <div class="btn-add-cart-container">
       <input v-on:click="addDish" type="submit" class="button btn-add-cart" value="Agregar al carrito" :disabled="isDisabled">
@@ -38,12 +38,16 @@
 import Header from '../components/Header.vue'
 import Nav from '../components/Nav.vue'
 
+// Services
+import { createOrder } from '@/services/users'
+
 export default {
   name: 'DishView',
   data: function () {
     return {
       dish: null,
-      counter: 0
+      counter: 0,
+      comments: null
     }
   },
   created: function () {
@@ -74,7 +78,12 @@ export default {
     },
     addDish () {
       if (!isNaN(localStorage.user_id)) {
-        console.log('Adding...')
+        let params = {
+          'id_dish': this.dish['id_dish'],
+          'quantity': this.counter,
+          'comments': this.comments
+        }
+        createOrder(localStorage.user_id, params)
       } else {
         this.$router.push({name: 'LoginView'})
       }
