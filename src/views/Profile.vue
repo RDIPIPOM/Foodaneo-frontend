@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <div class="profile-container-top">
       <div class="medium-body welcomeGreet">{{getGreet()}}, bienvenido</div>
       <h2 class="h2 profile-name">{{first_name}}</h2>
@@ -33,6 +33,7 @@ export default {
   name: 'ProfileView',
   data: function () {
     return {
+      cart: false,
       date: new Date(),
       first_name: '',
       email: '',

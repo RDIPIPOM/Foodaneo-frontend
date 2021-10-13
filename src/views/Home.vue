@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <div class="CTA">
       <h1 class="h1 CTA-message">{{CTA_message}}</h1>
       <a class="button btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
@@ -28,6 +28,7 @@ export default {
   name: 'HomeView',
   data: function () {
     return {
+      cart: false,
       date: new Date(),
       CTA_message: '',
       dishCategories: {},

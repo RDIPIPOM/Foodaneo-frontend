@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <div class="nav-menu">
       <a href="./#/menu-dishes" class="nav-menu-option nav-menu-option-active">Platillos</a>
       <a href="./#/menu-places" class="nav-menu-option">Lugares</a>
@@ -29,6 +29,7 @@ export default {
   name: 'MenuDishesView',
   data: function () {
     return {
+      cart: false,
       dishCategories: []
     }
   },

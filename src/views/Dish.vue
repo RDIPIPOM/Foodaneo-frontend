@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
+    <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <img class="big-dish-picture" :src="dish.dish_path_photography" alt="">
     <div class="dish-details">
       <h2 class="h2 dish-title">{{dish.dish_name}}</h2>
@@ -58,7 +58,6 @@ export default {
     } else {
       localStorage.dish = JSON.stringify(this.dish)
     }
-    console.log(this.dish)
   },
   computed: {
     isDisabled () {

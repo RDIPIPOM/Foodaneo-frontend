@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <div class="nav-menu">
       <a href="./#/menu-dishes" class="nav-menu-option">Platillos</a>
       <a href="./#/menu-places" class="nav-menu-option nav-menu-option-active">Lugares</a>
@@ -26,6 +26,7 @@ export default {
   name: 'MenuDishesView',
   data: function () {
     return {
+      cart: false,
       places: [
         { id: 1, name: 'Lonchería 1', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
         { id: 2, name: 'Lonchería 2', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
