@@ -18,9 +18,14 @@ let createOrder = (idUser, params) => {
   return axios.post(`${BASE_URL}/${idUser}/order_detail`, params)
 }
 
+let getCurrentOrder = (idUser) => {
+  return axios.get(`${BASE_URL}/${idUser}/orders`)
+}
+
 export {
   signin,
   signup,
   getUser,
-  createOrder
+  createOrder,
+  getCurrentOrder
 }

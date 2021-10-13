@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <img class="big-dish-picture" :src="dish.dish_path_photography" alt="">
     <div class="dish-details">
       <h2 class="h2 dish-title">{{dish.dish_name}}</h2>
@@ -45,6 +45,7 @@ export default {
   name: 'DishView',
   data: function () {
     return {
+      cart: false,
       dish: null,
       counter: 0,
       comments: null
@@ -83,7 +84,9 @@ export default {
           'quantity': this.counter,
           'comments': this.comments
         }
-        createOrder(localStorage.user_id, params)
+        createOrder(localStorage.user_id, params).then((res) => {
+          this.cart = true
+        }).catch(err => console.log(err))
       } else {
         this.$router.push({name: 'LoginView'})
       }

@@ -6,7 +6,7 @@
                 <img src="../assets/img/cart.svg" alt="">
             </div>
         </div>
-        <Cart v-on:close-cart="cart = false" v-show="cart"></Cart>
+        <Cart v-bind:cart="cart" v-on:close-cart="cart = false" v-show="cart"></Cart>
     </header>
 </template>
 
@@ -15,11 +15,7 @@ import Cart from '../components/Cart.vue'
 
 export default {
   name: 'Header',
-  data () {
-    return {
-      cart: false
-    }
-  },
+  props: ['cart'],
   components: {
     Cart
   }

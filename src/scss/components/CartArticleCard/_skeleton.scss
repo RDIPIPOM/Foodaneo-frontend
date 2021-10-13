@@ -1,0 +1,13 @@
+//CartArticleCard skeleton
+
+.card-cart-article{
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+    margin-bottom: 12px;
+}
+
+.cart-article-header, .cart-article-body{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
