@@ -3,8 +3,15 @@
     <Header v-on:open-cart="cart = true" v-on:close-cart="cart = false" v-bind:cart="cart"></Header>
     <img class="big-dish-picture" :src="dish.dish_path_photography" alt="">
     <div class="dish-details">
-      <h2 class="h2 dish-title">{{dish.dish_name}}</h2>
-      <div class="medium-body dish-location">{{dish.restaurant_name}}</div>
+      <div class="dish-details-header">
+        <h2 class="h2 dish-title">{{dish.dish_name}}</h2>
+        <div class="medium-body dish-location">{{dish.restaurant_name}}</div>
+      </div>
+      <h4 v-if="!dish.dish_discount_price" class="h4 dish_discount_price">${{dish.dish_price}}</h4>
+      <div v-else class="dish-details-body">
+        <h4 class="h4 dish_discount_price">${{dish.dish_discount_price}}</h4>
+        <h4 class="h4 dish_price">${{dish.dish_price}}</h4>
+      </div>
       <div class="body dish-description">{{dish.dish_description}}</div>
     </div>
     <div class="dish-separator">

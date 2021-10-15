@@ -36,7 +36,6 @@ export default {
     if (!isNaN(localStorage.user_id)) {
       getCurrentOrder(localStorage.user_id).then((res) => {
         this.order = res.data
-        console.log(this.order)
       })
     } else {
       this.order.order_details = []

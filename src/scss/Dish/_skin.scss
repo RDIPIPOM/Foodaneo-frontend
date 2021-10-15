@@ -8,6 +8,15 @@
     color: var(--lighter-body);
 }
 
+.dish_discount_price {
+    color: var(--common-body);
+}
+
+.dish_price {
+    color: var(--disabled-text);
+    text-decoration: line-through;
+}
+
 .dish-description {
     color: var(--kinda-bold-text);
 }

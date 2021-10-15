@@ -9,12 +9,27 @@
     padding: 32px 24px;
 }
 
+.dish-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .dish-title {
-    margin-bottom: 2px;
+    margin-bottom: 8px;
 }
 
 .dish-location {
-    margin-bottom: 16px;
+    margin-bottom: 1px;
+}
+
+.dish_discount_price {
+    margin: 0 8px 32px 0;
+}
+
+.dish-details-body{
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dish-separator {
