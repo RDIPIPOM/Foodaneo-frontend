@@ -11,3 +11,9 @@
 .cart-article-note {
     color: var(--kinda-bold-text);
 }
+
+.delete-article {
+    color: var(--wrong);
+    border: 1px solid var(--line);
+    border-radius: 40px;
+}

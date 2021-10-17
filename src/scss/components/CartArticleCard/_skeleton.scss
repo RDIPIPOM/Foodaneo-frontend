@@ -11,3 +11,13 @@
     justify-content: space-between;
     margin-bottom: 8px;
 }
+
+.cart-article-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0 8px 0;
+}
+
+.delete-article {
+    padding: 2px 16px;
+}

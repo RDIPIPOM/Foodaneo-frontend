@@ -22,10 +22,20 @@ let getCurrentOrder = (idUser) => {
   return axios.get(`${BASE_URL}/${idUser}/orders`)
 }
 
+let getTotalItemsOrderDetails = (idUser) => {
+  return axios.get(`${BASE_URL}/${idUser}/order_detail/total_items`)
+}
+
+let deleteOrderDetail = (idUser, idOrder, idOrderDetail) => {
+  return axios.delete(`${BASE_URL}/${idUser}/orders/${idOrder}/order_detail/${idOrderDetail}`)
+}
+
 export {
   signin,
   signup,
   getUser,
   createOrder,
-  getCurrentOrder
+  getCurrentOrder,
+  getTotalItemsOrderDetails,
+  deleteOrderDetail
 }
