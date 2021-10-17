@@ -22,17 +22,30 @@ import Header from '../components/Header.vue'
 import PlaceCard from '../components/PlaceCard.vue'
 import Nav from '../components/Nav.vue'
 
+// Services
+import { getRestaurants } from '@/services/restaurants'
+
 export default {
   name: 'MenuDishesView',
   data: function () {
     return {
       cart: false,
-      places: [
-        { id: 1, name: 'Lonchería 1', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
-        { id: 2, name: 'Lonchería 2', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') },
-        { id: 3, name: 'Lonchería 3', placeStatus: 'Abierto', path_photography: require('../assets/img/places-pictures/ccc.jpg') }
-      ]
+      places: []
     }
+  },
+  created: function () {
+    getRestaurants().then((res) => {
+      this.places = res.data
+      let time = new Date().getTime()
+      this.places.forEach((place, index) => {
+        if (new Date(this.places[index].open_time) <= time && new Date(this.places[index].open_time) >= time) {
+          this.places[index]['placeStatus'] = 'Abierto'
+        } else {
+          this.places[index]['placeStatus'] = 'Cerrado'
+        }
+        this.places[index].path_photography = require('../assets/img/places-pictures/' + place.path_photography)
+      })
+    }).catch(err => console.log(err))
   },
   components: {
     Header,
@@ -41,3 +54,6 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" src="../scss/MenuPlaces/_skeleton.scss"></style>
+<style lang="scss" src="../scss/MenuPlaces/_skin.scss"></style>

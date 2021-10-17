@@ -2,8 +2,8 @@
   <div class="place-card">
     <img class="place-image" v-bind:src="place.path_photography">
     <div class="place-details">
-      <div class="place-name">{{ place.name }}</div>
-      <div class="place-status">{{ place.placeStatus }}</div>
+      <h3 class="h3 place-name">{{ place.name }}</h3>
+      <div class="medium-body place-status" :class="[place.placeStatus === 'Abierto' ? 'place-status-open' : 'place-status-close']">{{ place.placeStatus }}</div>
     </div>
   </div>
 </template>

@@ -1,25 +1,17 @@
 //PlaceCard skin
 
-.place-card{
-    border-bottom: 1px solid #E4E4E4;
-}
-
-.place-card:first-of-type{
-    border-top: 1px solid #E4E4E4;
-}
-
 .place-image{
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .place-name{
-    font-family: basier_circlemedium;
-    font-size: 18px;
     color: var(--bold-text);
 }
 
-.place-status{
-    font-family: basier_circleregular;
-    font-size: 12px;
+.place-status-open{
     color: var(--positive);
+}
+
+.place-status-close{
+    color: var(--wrong);
 }
