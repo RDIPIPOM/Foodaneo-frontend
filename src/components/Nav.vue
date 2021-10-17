@@ -33,13 +33,17 @@ export default {
     profileView: function (e) {
       e.preventDefault()
       if (!isNaN(localStorage.user_id)) {
-        this.$router.push({name: 'ProfileView'}).catch(err => {
-          console.log(err)
-        })
+        if (this.$route.name !== 'ProfileView') {
+          this.$router.push({name: 'ProfileView'}).catch(err => {
+            console.log(err)
+          })
+        }
       } else {
-        this.$router.push({name: 'LoginView'}).catch(err => {
-          console.log(err)
-        })
+        if (this.$route.name !== 'LoginView') {
+          this.$router.push({name: 'LoginView'}).catch(err => {
+            console.log(err)
+          })
+        }
       }
     }
   }
