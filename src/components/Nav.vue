@@ -11,7 +11,7 @@
                 <img class="nav-option-picture" v-else src="../assets/img/menu-icon.svg">
                 <p class="nav-option-title">Menú</p>
             </a>
-            <a href="" class="nav-option">
+            <a href="./#/orders" class="nav-option">
                 <img class="nav-option-picture" v-if="this.activeWindow === 'orders'" src="../assets/img/orders-active-icon.svg">
                 <img class="nav-option-picture" v-else src="../assets/img/orders-icon.svg">
                 <p class="nav-option-title">Pedidos</p>

@@ -1,0 +1,21 @@
+//Orders skeleton
+
+.orders-header {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-body {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-empty {
+    margin: 56px;
+}

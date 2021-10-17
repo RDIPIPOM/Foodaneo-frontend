@@ -12,7 +12,7 @@
           <div class="cart-subtotal-container">
             <h4 class="h4 cart-subtotal-text">Subtotal:&nbsp;<span class="cart-subtotal">${{order.total}}</span></h4>
           </div>
-          <div class="button btn-option-cart btn-add-articles">Agregar más productos</div>
+          <a href="./#/menu-dishes" class="button btn-option-cart btn-add-articles">Agregar más productos</a>
           <div class="button btn-option-cart btn-finish-order">Terminar orden</div>
         </div>
         <div class="cart-empty" v-else>

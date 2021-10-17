@@ -10,6 +10,8 @@ import LoginView from '@/views/Login'
 import SignupView from '@/views/Signup'
 import Signup2View from '@/views/Signup2'
 import ProfileView from '@/views/Profile'
+import OrdersView from '@/views/Orders'
+import RestaurantView from '@/views/Restaurant'
 
 Vue.use(Router)
 
@@ -54,6 +56,16 @@ export default new Router({
       path: '/profile',
       name: 'ProfileView',
       component: ProfileView
+    },
+    {
+      path: '/orders',
+      name: 'OrdersView',
+      component: OrdersView
+    },
+    {
+      path: '/restaurant',
+      name: 'RestaurantView',
+      component: RestaurantView
     }
   ]
 })
