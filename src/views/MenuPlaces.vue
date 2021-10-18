@@ -36,9 +36,12 @@ export default {
   created: function () {
     getRestaurants().then((res) => {
       this.places = res.data
-      let time = new Date().getTime()
+      let date = new Date()
       this.places.forEach((place, index) => {
-        if (new Date(this.places[index].open_time) <= time && new Date(this.places[index].open_time) >= time) {
+        let openDate = Date.parse(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + this.places[index].open_time)
+        let closeDate = Date.parse(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + this.places[index].close_time)
+
+        if (openDate <= date.getTime() && closeDate >= date.getTime()) {
           this.places[index]['placeStatus'] = 'Abierto'
         } else {
           this.places[index]['placeStatus'] = 'Cerrado'
