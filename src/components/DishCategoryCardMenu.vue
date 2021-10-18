@@ -2,7 +2,7 @@
   <div class="dish-category-menu">
     <h3 class="h3 dish-category">{{ dishCategory.name }}</h3>
     <DishCard v-for="dish in dishCategory.dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
-    <div class="btn-view-all">
+    <div v-if="limit" class="btn-view-all">
       <p class="text-view-all">Ver todos</p>
       <img class="arrow-img" src="../assets/img/arrow-icon.svg" alt="">
     </div>
@@ -14,9 +14,11 @@ import DishCard from './DishCard.vue'
 
 export default {
   name: 'DishCategoryCardMenu',
-  props: ['dishCategory'],
+  props: ['dishCategory', 'limit'],
   created: function () {
-    this.dishCategory['dishes'].length = 3
+    if (this.limit !== null) {
+      this.dishCategory['dishes'].length = this.limit
+    }
   },
   components: {
     DishCard

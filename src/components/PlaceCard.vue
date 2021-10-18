@@ -1,5 +1,5 @@
 <template>
-  <div class="place-card">
+  <div @click="$router.push({name: 'RestaurantView', params: place})" class="place-card">
     <img class="place-image" v-bind:src="place.path_photography">
     <div class="place-details">
       <h3 class="h3 place-name">{{ place.name }}</h3>
@@ -12,11 +12,6 @@
 export default {
   name: 'PlaceCard',
   props: ['place'],
-  data () {
-    return {
-
-    }
-  },
   computed: {
     isHomeActive: function () {
       return {

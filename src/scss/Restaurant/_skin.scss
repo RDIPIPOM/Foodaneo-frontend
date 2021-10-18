@@ -1,0 +1,22 @@
+//Restaurant skin
+
+.big-restaurant-picture {
+    object-fit: cover;
+    object-position: center;
+}
+
+.restaurant-name {
+    color: var(--black);
+}
+
+.place-status-open{
+    color: var(--positive);
+}
+
+.place-status-close{
+    color: var(--wrong);
+}
+
+.restaurant-description {
+    color: var(--kinda-bold-text);
+}

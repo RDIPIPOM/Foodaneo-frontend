@@ -1,5 +1,10 @@
 //Dish skin
 
+.big-dish-picture {
+    object-fit: cover;
+    object-position: center;
+}
+
 .dish-title {
     color: var(--positive);
 }
