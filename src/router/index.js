@@ -13,6 +13,10 @@ import ProfileView from '@/views/Profile'
 import OrdersView from '@/views/Orders'
 import RestaurantView from '@/views/Restaurant'
 import OffersView from '@/views/Offers'
+import BreakfastsView from '@/views/Breakfasts'
+import LunchesView from '@/views/Lunches'
+import DrinksView from '@/views/Drinks'
+import SnacksView from '@/views/Snacks'
 
 Vue.use(Router)
 
@@ -72,6 +76,26 @@ export default new Router({
       path: '/offers',
       name: 'OffersView',
       component: OffersView
+    },
+    {
+      path: '/breakfasts',
+      name: 'BreakfastsView',
+      component: BreakfastsView
+    },
+    {
+      path: '/lunches',
+      name: 'LunchesView',
+      component: LunchesView
+    },
+    {
+      path: '/drinks',
+      name: 'DrinksView',
+      component: DrinksView
+    },
+    {
+      path: '/snacks',
+      name: 'SnacksView',
+      component: SnacksView
     }
   ]
 })

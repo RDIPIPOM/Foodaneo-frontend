@@ -8,7 +8,7 @@
     <DishCard v-for="dish in dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
     <div class="medium-body text-at-the-end">Eso es todo por hoy :)</div>
     <div class="navigation-space"></div>
-    <Nav activeWindow="profile"></Nav>
+    <Nav activeWindow="menu"></Nav>
   </div>
 </template>
 
@@ -31,7 +31,6 @@ export default {
   created: function () {
     getDishesOffers().then(res => {
       this.dishes = res.data
-      console.log(this.dishes)
       this.dishes.forEach(dish => {
         dish.dish_path_photography = require('../assets/img/dish-pictures/' + dish.dish_path_photography)
       })

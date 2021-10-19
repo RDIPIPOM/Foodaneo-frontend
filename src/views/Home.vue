@@ -6,7 +6,7 @@
       <a class="button btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
     </div>
     <div class="dish-categories">
-      <DishCategoryCardHome v-bind:key="dishCategoryTime.id" v-bind:dishCategory="dishCategoryTime" v-bind:viewAllItems="'OffersView'"></DishCategoryCardHome>
+      <DishCategoryCardHome v-bind:key="dishCategoryTime.id" v-bind:dishCategory="dishCategoryTime" v-bind:viewAllItems="categoryTimeViewAll"></DishCategoryCardHome>
       <DishCategoryCardHome v-bind:key="dishCategoryOffers.id" v-bind:dishCategory="dishCategoryOffers" v-bind:viewAllItems="'OffersView'"></DishCategoryCardHome>
     </div>
     <div class="navigation-space"></div>
@@ -33,7 +33,8 @@ export default {
       CTA_message: '',
       dishCategories: {},
       dishCategoryTime: {},
-      dishCategoryOffers: {}
+      dishCategoryOffers: {},
+      categoryTimeViewAll: ''
     }
   },
   created: function () {
@@ -41,7 +42,6 @@ export default {
       res.data.forEach(category => {
         this.dishCategories[category['name']] = category
       })
-
       let time = this.date.getHours()
       if (time >= 0 && time < 12) {
         this.CTA_message = 'La primera comida es la más importante del día ¿Ya desayunaste?'
@@ -72,6 +72,11 @@ export default {
         this.dishCategoryTime['dishes'].forEach(dish => {
           dish.dish_path_photography = require('../assets/img/dish-pictures/' + dish.dish_path_photography)
         })
+        if (this.dishCategoryTime === 'Desayunos para comenzar con todo') {
+          this.categoryTimeViewAll = 'BreakfastsView'
+        } else {
+          this.categoryTimeViewAll = 'LunchesView'
+        }
       }).catch(err => console.log(err))
     }
   },
