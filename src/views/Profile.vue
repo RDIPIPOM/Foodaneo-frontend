@@ -5,7 +5,7 @@
       <div class="medium-body welcomeGreet">{{getGreet()}}, bienvenido</div>
       <h2 class="h2 profile-name">{{first_name}}</h2>
       <div class="medium-body profile-text-pedidos-realizados">Pedidos realizados</div>
-      <div class="log-in-text profile-orders">12</div>
+      <div class="log-in-text profile-orders">0</div>
     </div>
     <div class="profile-container-bottom">
       <div class="medium-body profile-text-detail">Correo electrónico</div>

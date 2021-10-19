@@ -12,6 +12,7 @@ import Signup2View from '@/views/Signup2'
 import ProfileView from '@/views/Profile'
 import OrdersView from '@/views/Orders'
 import RestaurantView from '@/views/Restaurant'
+import OffersView from '@/views/Offers'
 
 Vue.use(Router)
 
@@ -66,6 +67,11 @@ export default new Router({
       path: '/restaurant',
       name: 'RestaurantView',
       component: RestaurantView
+    },
+    {
+      path: '/offers',
+      name: 'OffersView',
+      component: OffersView
     }
   ]
 })

@@ -6,8 +6,8 @@
       <a class="button btnCTAOrder" href="/#/menu-dishes">Ordenar</a>
     </div>
     <div class="dish-categories">
-      <DishCategoryCardHome v-bind:key="dishCategoryTime.id" v-bind:dishCategory="dishCategoryTime"></DishCategoryCardHome>
-      <DishCategoryCardHome v-bind:key="dishCategoryOffers.id" v-bind:dishCategory="dishCategoryOffers"></DishCategoryCardHome>
+      <DishCategoryCardHome v-bind:key="dishCategoryTime.id" v-bind:dishCategory="dishCategoryTime" v-bind:viewAllItems="'OffersView'"></DishCategoryCardHome>
+      <DishCategoryCardHome v-bind:key="dishCategoryOffers.id" v-bind:dishCategory="dishCategoryOffers" v-bind:viewAllItems="'OffersView'"></DishCategoryCardHome>
     </div>
     <div class="navigation-space"></div>
     <Nav activeWindow="home"></Nav>

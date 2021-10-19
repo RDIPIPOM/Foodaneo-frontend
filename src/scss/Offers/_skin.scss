@@ -1,0 +1,18 @@
+//Offers skin
+
+.offers-background {
+    background-image: url(../../assets/img/offers_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offers-title, .offers-subtitle {
+    background-color: transparent;
+    color: var(--white-over-green);
+    text-align: center;
+}
+
+.text-at-the-end {
+    color: var(--placeholder);
+}
