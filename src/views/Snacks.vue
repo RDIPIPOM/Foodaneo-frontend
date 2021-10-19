@@ -8,7 +8,7 @@
       <a href="./#/snacks" class="nav-menu-category nav-menu-category-active"><img class="img-menu-category" src="../assets/img/snack-active-icon.svg" alt=""></a>
     </div>
     <h1 class="h1 category-title">{{category.name}}</h1>
-    <div class="body category-subtitle">Para continuar el día con energía</div>
+    <div class="body category-subtitle">Para las prisas y los antojos</div>
     <div class="dishes-category">
       <DishCard v-for="dish in category.dishes" v-bind:key="dish.id" v-bind:dish="dish"></DishCard>
     </div>

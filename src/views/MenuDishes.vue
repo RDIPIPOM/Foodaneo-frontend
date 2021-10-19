@@ -10,7 +10,7 @@
       <p class="menu-title-p">Tenemos todas estas opciones para ti</p>
     </div>
     <div class="dish-categories">
-      <DishCategoryCardMenu v-for="dishCategory in dishCategories" v-bind:key="dishCategory.id" v-bind:dishCategory="dishCategory" v-bind:limit="3"></DishCategoryCardMenu>
+      <DishCategoryCardMenu v-for="dishCategory in dishCategories" v-bind:key="dishCategory.id" v-bind:dishCategory="dishCategory" v-bind:viewAllItems="dishCategory.name" v-bind:limit="3"></DishCategoryCardMenu>
     </div>
     <div class="navigation-space"></div>
     <Nav activeWindow="menu"></Nav>
@@ -41,6 +41,7 @@ export default {
           this.dishCategories[index]['dishes'][dishIndex]['dish_path_photography'] = require('../assets/img/dish-pictures/' + dish['dish_path_photography'])
         })
       })
+      console.log(this.dishCategories)
     }).catch(err => console.log(err))
   },
   components: {
