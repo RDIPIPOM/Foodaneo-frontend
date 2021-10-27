@@ -23,6 +23,8 @@
 }
 
 .loginSubmit {
+    outline: none;
+    border: none;
     background-color: var(--positive);
     color: var(--white-over-green);
 }

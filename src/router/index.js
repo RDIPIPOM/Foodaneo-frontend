@@ -17,6 +17,7 @@ import BreakfastsView from '@/views/Breakfasts'
 import LunchesView from '@/views/Lunches'
 import DrinksView from '@/views/Drinks'
 import SnacksView from '@/views/Snacks'
+import DeliveryDetailsView from '@/views/DeliveryDetails'
 
 Vue.use(Router)
 
@@ -96,6 +97,11 @@ export default new Router({
       path: '/snacks',
       name: 'SnacksView',
       component: SnacksView
+    },
+    {
+      path: '/deliverydetails',
+      name: 'DeliveryDetailsView',
+      component: DeliveryDetailsView
     }
   ]
 })

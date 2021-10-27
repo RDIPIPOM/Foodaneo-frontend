@@ -13,7 +13,7 @@
             <h4 class="h4 cart-subtotal-text">Subtotal:&nbsp;<span class="cart-subtotal">${{order.total}}</span></h4>
           </div>
           <a @click="addMoreProducts" class="button btn-option-cart btn-add-articles">Agregar más productos</a>
-          <a @click="addMoreProducts" class="button btn-option-cart btn-finish-order">Terminar orden</a>
+          <a @click="finishOrder" class="button btn-option-cart btn-finish-order">Terminar orden</a>
         </div>
         <div class="cart-empty" v-else>
           <div class="body cart-empty-text">Parece que no has<br>agregado nada aún</div>
@@ -69,6 +69,11 @@ export default {
       } else {
         this.$emit('close-cart')
       }
+    },
+    finishOrder: function () {
+      this.$router.push({name: 'DeliveryDetailsView'}).catch(err => {
+        console.log(err)
+      })
     }
   },
   watch: {

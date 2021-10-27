@@ -1,0 +1,36 @@
+//DeliveryDetails skin
+
+.dd-title {
+    color: var(--black);
+}
+
+.dd-subtitle {
+    color: var(--common-body);
+}
+
+.dd-label {
+    color: var(--common-body);
+}
+
+.dd-input {
+    color: var(--kinda-bold-text);
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--placeholder);
+}
+
+.dd-input:focus {
+    border: 1px solid var(--positive);
+}
+
+.btnGoPayMethods {
+    outline: none;
+    border: none;
+    background-color: var(--positive);
+    color: var(--white-over-green);
+}
+
+.btnGoPayMethods:disabled {
+    background-color: var(--disabled);
+    color: var(--disabled-text);
+}
